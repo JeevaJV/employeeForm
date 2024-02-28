@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<title>Form</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        EMPLOYEE FORM
+    </div>
+</header>
+<form  method="post" action="next">
+<ul>
+<li>
+<label for="name">Name:</label>
+<input type="text" name="name" maxlength="30" required>
+</li>
+<li>
+<label for="gender" >Gender:</label>
+<select name="gender" id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+</li>
+<li>
+    Gender: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 
+    <input type="radio"  name="gender" value="female" required>
+    <label for="female" style="width:max-content">Female</label>
+    <input type="radio"  name="gender" value="male" required>
+    <label for="male">Male</label>
+    </li>
+<li> 
+<label for="dob">Date Of Birth:</label>
+<input type="date" name="dob" max="2001-12-31" min="1985-01-01" required>
+</li>
+<li> 
+<label for="id">Employee ID:</label>
+<input type="number" name="id" minlength="6" min="100000" max="999999" onblur=" if(value<100000) value=null;
+if(value>999999) value=null; " required>
+</li>
+<li>
+<label for="dept">Department:</label>
+<select name="dept" id="dept">
+    <option value="management">Management</option>
+    <option value="Logistics">Logistics</option>
+    <option value="Development">Development</option>
+    <option value="Maintanance">Maintanance</option>
+    <option value="HR">HR</option>
+</select>
+</li>
+<li> 
+<label for="designation">Designation:</label>
+<select name="designation" id="designation">
+    <option value="manager">Manager</option>
+    <option value="intern">Intern</option>
+    <option value="trainee">Trainee</option>
+    <option value="dept-head">Dept- Head</option>
+    <option value="staff">Staff</option>
+</select>
+</li>
+<li> 
+<label for="salary">Salary:</label>
+<input type="number" maxlength="8" min="0" max="99999999" onkeyup="if(value<0) value=null;
+if(value>99999999) value=null; " placeholder="Inr per annum" name="salary" required>
+</li>
+
+<li class="btnn"> 
+<button type="submit">Submit</button>
+</li>
+</ul></form>
+
+</body>
+</html>

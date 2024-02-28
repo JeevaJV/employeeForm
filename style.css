@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: medium;
+}
+.header{
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size:x-large;
+    background-color: rgb(0, 112, 223);
+}
+
+form{
+
+text-align: center;
+display: list-item;
+margin-left: 22.5%;
+margin-top: 25px;
+align-items: center;
+}
+li{
+    text-decoration: none;
+    text-align: left;
+    font-size: x-large;
+}
+input li{
+    min-width: 25%;
+    border-width: 1px;
+}
+label{
+    width: 275px;
+    display: inline-block;
+    font-size: 100px;
+}
+.nxt label{
+    width: 150px;
+    display: inline-block;
+}
+.exp label{
+    margin-left: 20px;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+button{
+    text-align: center;
+}
+.btnn{
+    text-align: center;
+}
+.view{
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
